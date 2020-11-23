@@ -1,25 +1,25 @@
-# @kurier-addons/many-to-many
+# @kurier/addon-auto-include
 
-A Kurier addon that creates intermediate resource types for many-to-many relationships.
+A Kurier addon that alters GET operations to automatically include relationships.
 
 ## Usage
 
 Install it using npm or yarn:
 
 ```bash
-$ npm i -D @kurier/addon-many-to-many
-$ yarn add -D @kurier/addon-many-to-many
+$ npm i -D @kurier/addon-auto-include
+$ yarn add -D @kurier/addon-auto-include
 ```
 
 Add it to your Kurier app:
 
 ```ts
-import ManyToManyAddon from "@kurier/addon-many-to-many";
+import AutoIncludeAddon from "@kurier/addon-auto-include";
 // ...
-app.use(ManyToManyAddon);
+app.use(AutoIncludeAddon);
 ```
 
-Apply the addon to any resource relationship by setting the `manyToMany` flag to `true`:
+Apply the addon to any resource relationship by setting the `autoInclude` flag to `true`:
 
 ```ts
 import { Resource } from "kurier";
@@ -34,7 +34,7 @@ export default class Collection extends Resource {
     relationships: {
       designers: {
         type: () => Designer,
-        manyToMany: true,
+        autoInclude: true,
         foreignKeyName: "design_id",
       },
     },
