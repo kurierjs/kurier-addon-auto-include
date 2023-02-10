@@ -1,6 +1,6 @@
 {
   "name": "@kurier/addon-auto-include",
-  "version": "0.0.1",
+  "version": "0.1.0-alpha1",
   "description": "A Kurier addon that alters GET operations to automatically include relationships.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
