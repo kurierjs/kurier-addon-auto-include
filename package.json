@@ -1,6 +1,6 @@
 {
   "name": "@kurier/addon-auto-include",
-  "version": "0.0.1",
+  "version": "0.1.0-alpha2",
   "description": "A Kurier addon that alters GET operations to automatically include relationships.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,12 +23,13 @@
     "kurier": "^1.0.0"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "install-peers-cli": "^2.2.0",
-    "prettier": "^2.1.2",
-    "tslint": "^6.1.3",
-    "tslint-config-airbnb": "^5.11.2",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-plugin-prettier": "^2.3.0",
-    "typescript": "^4.0.5"
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.4"
   }
 }
